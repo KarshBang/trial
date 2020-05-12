@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import {HashRouter as Router, Route, Link} from 'react-router-dom'
 import logo from './logo.svg'
 import './App.css'
 
@@ -17,7 +17,7 @@ function Hello() {
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <ul>
         <li><Link to='/'>home</Link></li>
         <li><Link to='/hello/'>hello world</Link></li>
